@@ -1,0 +1,15 @@
+server:
+  port: 1040
+  servlet:
+    context-path: /movie
+
+spring:
+  application:
+    name: movie-service
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:1010/eureka/
